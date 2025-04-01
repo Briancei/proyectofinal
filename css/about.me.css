@@ -1,0 +1,198 @@
+/* contenedor principal */
+.About {
+    padding: 2rem;
+}
+
+/* Contenedor de la imagen y texto */
+.About-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    line-height: 1.5rem;
+
+    margin-bottom: 1rem;
+}
+
+.About-title {
+    font-family: var(--font-bold);
+    font-size: var(--font-size-xl);
+    text-align: center;
+
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    line-height: 2rem;
+}
+
+.About-icon {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: var(--font-size-lg);
+
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.About-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Imagen */
+
+.About-img img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.About-text {
+    
+    text-align: center;
+    font-family: var(--font-regular);
+    font-size: var(--font-size-sm);
+
+    margin-bottom: 2rem;
+}
+
+.Acordeon {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--color-secondary);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Acordeón experiencia y estudios */
+
+.Acordeon-title {
+    font-family: var(--font-bold);
+    text-align: center;
+    
+    color: var(--color-text-dark);
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+    line-height: 1em;
+
+    margin-bottom: 1rem;
+}
+
+
+.Acordeon-header {
+    background-color: var(--bg-color-dark);
+    padding: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    transition: background-color 0.3s ease;
+    font-family: var(--font-medium);
+}
+
+.Acordeon-header:hover {
+    background-color: var(--color-emphasis);
+    color: var(--color-text-dark);
+}
+
+.Acordeon-item:hover {
+    background-color: var(--bg-color-light);
+}
+
+.Acordeon-content {
+    padding: 2rem;
+    display: none;
+    
+    font-size: var(--font-size-sm);
+    color: var(--color-text-dark);
+    font-family: var(--font-regular);
+    font-size: var(--font-size-sm);
+    line-height: 1.5rem;
+    border-radius: 0 0 10px 10px;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+/* Monstrar contenido del acordeón */
+.Acordeon-item.active .Acordeon-content {
+    display: block;
+}
+
+
+/* Responsive para Tablet */
+@media (min-width: 768px) {
+    .About {
+        padding: 3rem;
+    }
+
+    .About-title {
+        text-align: left;
+    }
+
+    .About-container {
+        flex-direction: row;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .About-img img {
+        width: 400px;
+    }
+
+    .About-text {
+        text-align: left;
+        max-width: none;
+    }
+    .Acordeon-title {
+        font-size: var(--font-size-lg);
+        margin-top: 4rem;
+
+    }
+}
+
+/* Responsive para Desktop */
+@media (min-width: 1024px) {
+    .About {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 5rem;
+    }
+
+    .About-container {
+        gap: 2rem;
+    }
+
+    .About-img {
+        flex: 1;
+    }
+
+    .About-img img {
+        width: 450px;
+        max-width: none;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        object-fit: cover; 
+    }
+
+    .About-title {
+        text-align: left;
+    }
+
+    .About-text {
+        flex: 1;
+        font-size: var(--font-size-sm);
+    }
+
+    .Acordeon {
+        margin: 2rem auto;
+        max-width: 800px;
+    }
+    .Acordeon-title {
+        font-size: var(--font-size-lg);
+        margin-top: 4rem;
+    }
+
+    .Acordeon-header {
+        padding: 2.5rem;
+        font-size: var(--font-size-md);
+    }
+}

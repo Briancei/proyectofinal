@@ -1,0 +1,58 @@
+/* Controllers es el archivo CSS donde esta el reset, las tipografías importadas y las variables que he personalizado para el proyecto */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MyCustomFontMedium';
+    src: url('../assets/font/Kalnia-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyCustomFontBold';
+    src: url('../assets/font/Kalnia-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyCustomFontLight';
+    src: url('../assets/font/Kalnia-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Variables globales */
+
+:root {
+    /* colores */
+    --color-primary: #1D1D1B;
+    --color-secondary: #C6C6C6;
+    --color-text: #1D1D1B;
+    --bg-color: #F2F1ED;
+    --bg-color-dark: #1D1D1B;
+    --color-emphasis: #FFEE88 ;
+
+    /* tipografías */
+
+    --font-regular: helvetica;
+    --font-medium: 'MyCustomFontMedium';
+    --font-bold: 'MyCustomFontBold';
+    --font-light: 'MyCustomFontLight';
+
+    /* Tamaños de fuente */
+    --font-size-xs: 0.75em;
+    --font-size-sm: 1em;
+    --font-size-md: 1.5em;
+    --font-size-lg: 2em;
+    --font-size-xl: 2.5em;
+    --font-size-xxl: 4em;
+
+    /* colores de texto */
+    --color-text-dark: #1D1D1B; /* por si algún día quiero hacer la web en modo oscuro */
+    --color-text-light: #ffffff;
+    --color-text-primary: #1D1D1B;
+}

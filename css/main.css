@@ -1,0 +1,270 @@
+/* Aquí se encuentra el css general del body, el main, el header y el footer, ya que esto irá en todas las páginas */
+/* Definir el diseño general del body, para que sea flexible y ocupe toda la página */
+.Body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; /* Elimina cualquier margen por defecto del navegador */
+    background-color: var(--bg-color);
+}
+
+.Main { 
+    flex: 1; /* Ocupa todo el espacio disponible */
+}
+
+/*------------------------*/
+/*        Header          */
+/*------------------------*/
+
+/* Estilo del encabezado */
+.Header {
+    background-color: var(--green-color);
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-primary);
+    position: sticky; /* Fija el menú */
+    top: 0; /* Lo coloca al principio */
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Contenedor del menú de navegación */
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos del menú de navegación */
+.Logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Enlaces de navegación - menu para desktop */
+
+.Nav-links {
+    display: none; /* Oculta los enlaces de navegación en móvil */
+    background-color: var(--bg-color-light);
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1;
+
+    list-style: none;
+    gap: 2rem;
+    font-family: var(--font-bold);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Estilos de los enlaces del menú desktop */
+
+.Nav-links a {
+    font-size: var(--font-size-sm);
+    padding: 0.5rem;
+    display: inline-block;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.Nav-links a:hover {
+    color: var(--color-text-primary);
+    text-decoration: 4px underline var(--color-emphasis);
+
+}
+
+/* Carrito y menú */
+/* Contenedor del carrito de compra y menú movil */
+
+.Nav-shop {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.Nav-menu {
+    gap: 4px;
+    border: none;
+    background-color: var(--bg-color-light);
+    cursor: pointer;
+}
+
+
+.Nav-menuLinks {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    transform: translateX(100%);
+    transition: transform 1s ease;
+    text-align: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.Nav-menuLinks.active {
+    display: flex;
+    transform: translateX(0);
+    background-color: white;
+    opacity: 90%;
+    font-size: var(--font-size-md);
+    list-style: none;
+
+}
+
+.Nav-menuLinks li a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-family: var(--font-bold);
+}
+
+
+/* Estios de los iconos (carrito y hamburguesa) */
+.Nav-icon {
+    font-size: 1.5rem; /* tamaños del icono */
+    color: var(--color-primary);
+    background: none; /* eliminar el fondo */
+    border: none;/* elimina el borde */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.Nav-icon:hover {
+    transform: scale(1.1);
+}
+
+
+/* estilos propios del menú hamburguesa pensado para móvil */
+.Nav-menu {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+.Nav-menu:hover {
+    transform: scale(1.1);
+}
+
+
+/*------------------------*/
+/*        Footer          */
+/*------------------------*/
+
+/* Estilos del pie de página */
+.Footer {
+    padding: 2rem;
+    margin-top: auto; /* Empuja el footer hacia abajo cuando el contenido es insuficiente */
+    text-align: center;
+    background-color: var(--bg-color-dark);
+    
+}
+
+.Footer-content {
+    margin: 0 auto;
+}
+
+/* Lista "menu" del footer */
+.Footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-regular);
+    align-items: center;
+    
+}
+
+/* Enlaces del footer */
+.Footer-link {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    text-decoration: none;
+}
+
+.Footer-link:hover {
+    text-decoration: underline;
+}
+
+/* "Diseñador por..." */
+.Footer-credits {
+    margin-top: 1rem;
+    font-size: var(--font-size-sm);
+    font-family: var(--font-regular);
+    color: var(--color-text-light);
+}
+
+/*-----------------------------*/
+/*    Responsive desktop       */
+/*-----------------------------*/
+
+@media (min-width: 768px) {
+
+    .Header {
+        padding:  1rem
+    }
+
+    .Logo {
+        margin-left: 40px;
+    }
+
+    /* Ajusta la barra de navegación */
+    .Nav {
+        align-items: center;
+    }
+
+    /* Muestra los enlaces del menú en desktop */
+    .Nav-links {
+        display: flex;
+        /* Muestra el menú para desktop */
+        justify-content: center;
+        width: auto;
+        flex-direction: row;
+        gap: 1.5rem;
+        
+    }
+
+    .Nav-menuMobile { 
+        display: none;
+    }
+
+    .fa-brands, .fab{
+        margin-right: 50px;
+    }
+
+    /* cambia la lista del footer a fila */
+    .Footer-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+
+    }
+
+    .Footer-list {
+        flex-direction: row;
+
+    }
+
+    .Footer-listItem {
+        margin-right: 2rem;
+    }
+
+    .Footer-credits {
+        text-align: left;
+        margin-top: 0;
+    }
+
+}
