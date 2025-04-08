@@ -4,7 +4,7 @@
 .Gallery {
     position: relative;
     overflow: hidden; /* Oculta las imágenes fuera del contenedor */
-    width: 100%;
+    width: 99%;
     height: 100vh; /* Altura completa del viewport */
     display: flex;
     align-items: center;

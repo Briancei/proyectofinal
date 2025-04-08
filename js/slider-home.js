@@ -47,7 +47,7 @@ function actualizarSlider() {
 // Intervalo para avanzar automáticamente cada 3 segundos
 let intervalos;
 function agregarIntervalo() {
-    intervalos = setInterval(nextImage, 3000);
+    intervalos = setInterval(nextImage, 5000);
 }
 
 // Pausar el intervalo al pasar el ratón por encima del slider
