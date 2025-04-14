@@ -1,269 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee wood </title>
-
-    <!-- Iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/controllers.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/styles-shop.css">
-
-    <!-- Scripts -->
-    <script src="./js/menu.js" defer></script>
-    <script src="./js/Tabs-shop.js" defer></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cofee wood</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body class="Body">
-
-    <!-- Encabezado -->
-    <header class="Header">
-        <nav class="Nav">
-
-            <!-- logotipo -->
-            <a href="./index.html">
-                <img class="Logo" src="./assets/img/lau-draws.png" alt="Logotipo Laus Draws">
-            </a>
-
-            <!-- Enlaces de navegación para desktop -->
-            <ul class="Nav-links">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./sobre-mi.html">Sobre mi</a></li>
-                <li><a href="./tienda.html">Tienda</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-
-            <!-- Contenedor para el carrito y menu móvil -->
-            <div class="Nav-shop">
-                <a href="./carrito.html" class="Nav-icon fa-solid fa-cart-shopping" aria-label="Carrito"></a>
-
-                <a class="Nav-icon fab fa-instagram" href="https://www.instagram.com/itslauss/" target="_blank"></a>
-
-
-
-                <!-- Botón para el menú móvil -->
-                <div class="Nav-menuMobile">
-                    <button class="Nav-menu fa-solid fa-bars" aria-label="Abrir menú"></button>
-
-                    <!-- Menú móvil -->
-                    <ul class="Nav-menuLinks">
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./sobre-mi.html">Sobre mí</a></li>
-                        <li><a href="./tienda.html">Tienda</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </nav>
-
-    </header>
-    <main class="Main">
-
-        <!-- Contenedor de Tabs -->
-        <div class="Tabs">
-
-            <!-- Botones tabs -->
-            <div class="Tabs-buttons">
-                <button class="Tabs-button u-active" data-tab="prints">PRINTS</button>
-                <button class="Tabs-button" data-tab="originales">ORIGINALES</button>
-            </div>
-
-            <!-- Contenido -->
-            <div id="prints" class="Tabs-contenido u-visible">
-
-                <!-- Catálogo de Prints -->
-                <section class="Catalog">
-                    <div class="Catalog-grid">
-                        <!-- Print 1 -->
-                        <div class="Catalog-item">
-                            <a href="productos.html?id=1">
-                                <img src="./img/cafe-helado.jpg" alt="Cafe helado">
-                            </a>
-                            <div class="Catalog-description">
-                                <h3 class="Catalog-title">Café helado</h3>
-                                <p class="Catalog-price">2,50€</p>
-                                <a class="Catalog-button" href="productos.html?id=1">Ver más</a>
-                            </div>
-
-                        </div>
-
-                        <!-- Print 2 -->
-                        <div class="Catalog-item">
-                            <a href="productos.html?id=2">
-                                <img src="./img/cafe-ingles.jpg" alt="Café ingles">
-                            </a>
-                            <div class="Catalog-description">
-                                <h3 class="Catalog-title">Café Ingles</h3>
-                                <p class="Catalog-price">2,50€</p>
-                                <a class="Catalog-button" href="productos.html?id=2">Ver más</a>
-                            </div>
-                        </div>
-
-                        <!-- Print 3 -->
-                        <div class="Catalog-item">
-                            <a href="productos.html?id=3">
-                                <img src="./img/cafe-irish.jpg" alt="Café irish">
-                            </a>
-                            <div class="Catalog-description">
-                                <h3 class="Catalog-title">Café irish</h3>
-                                <p class="Catalog-price">2,50</p>
-                                <a class="Catalog-button" href="productos.html?id=3">Ver más</a>
-                                
-                            </div>
-                        </div>
-
-                        <!-- Print 4 -->
-                        <div class="Catalog-item">
-                            <a href="productos.html?id=5">
-                                <img src="./assets/img/prints/penguins.png" alt="Penguins">
-                            </a>
-                            <div class="Catalog-description">
-                                <h3 class="Catalog-title">Penguins</h3>
-                                <p class="Catalog-price">20€ - 40€</p>
-                                <a class="Catalog-button" href="productos.html?id=5">Ver más</a>
-                                
-                            </div>
-                        </div>
-
-                        <!-- Print 5 -->
-                        <div class="Catalog-item">
-                            <a href="productos.html?id=6">
-                                <img src="./assets/img/prints/retrato-familiar-personalizado.png"
-                                    alt="Retrato familiar personalizado">
-                            </a>
-                            <div class="Catalog-description">
-                                <h3 class="Catalog-title">Retrato Personalizado</h3>
-                                <p class="Catalog-price">50€ - 80€</p>
-                                <a class="Catalog-button" href="productos.html?id=6">Ver más</a>
-                            </div>
-                        </div>
-
-                        <!-- Print 6 -->
-                        <div class="Catalog-item">
-                            <a href="productos.html?id=4">
-                                <img src="./assets/img/prints/chris-martin.png" alt="Chris Martin">
-                            </a>
-                            <div class="Catalog-description">
-                                <h3 class="Catalog-title">Chris Martin</h3>
-                                <p class="Catalog-price">20€ - 40€</p>
-                                <a class="Catalog-button" href="productos.html?id=4">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <div id="originales" class="Tabs-contenido">
-
-                <!-- Catálogo de Originales -->
-                <section class="Catalog">
-                    <div class="Catalog-grid">
-
-                        <!-- Original 1 -->
-                        <div class="Catalog-item">
-                            <a href="productos.html?id=7">
-                                <img src="./assets/img/originales/jinx-original.png" alt="Jinx Original">
-                            </a>
-                            <div class="Catalog-description">
-                                <h3 class="Catalog-title">Jinx Arcane</h3>
-                                <p class="Catalog-price">150€</p>
-                                <a class="Catalog-button" href="productos.html?id=7">Ver más</a>
-                            </div>
-
-                        </div>
-
-                        <!-- Original 2 -->
-                        <div class="Catalog-item">
-                            <a href="productos.html?id=8">
-                                <img src="./assets/img/originales/tomas-shelby-original.png" alt="Tomas Shelby Original">
-                            </a>
-                            <div class="Catalog-description">
-                                <h3 class="Catalog-title">Tomas Shelby</h3>
-                                <p class="Catalog-price">95€</p>
-                                <a class="Catalog-button" href="productos.html?id=8">Ver más</a>
-                            </div>
-                        </div>
-
-                        <!-- Original 3 -->
-                        <div class="Catalog-item">
-                            <a href="productos.html?id=9">
-                                <img src="./assets/img/originales/the-fear-original.png" alt="The Fear Original">
-                            </a>
-                            <div class="Catalog-description">
-                                <h3 class="Catalog-title">The Fear</h3>
-                                <p class="Catalog-price">120€</p>
-                                <a class="Catalog-button" href="productos.html?id=9">Ver más</a>
-                            </div>
-                        </div>
-
-                        <!-- Original 4 -->
-                        <div class="Catalog-item">
-                            <a href="productos.html?id=10">
-                                <img src="./assets/img/originales/bloody-hand-original.png" alt="Bloody Hand Original">
-                            </a>
-                            <div class="Catalog-description">
-                                <h3 class="Catalog-title">Bloody Hand</h3>
-                                <p class="Catalog-price">110€</p>
-                                <a class="Catalog-button" href="productos.html?id=10">Ver más</a>
-                            </div>
-                        </div>
-
-                        <!-- Original 5 -->
-                        <div class="Catalog-item">
-                            <a href="productos.html?id=11">
-                                <img src="./assets/img/originales/Jane-history.png"
-                                    alt="Jane's History">
-                            </a>
-                            <div class="Catalog-description">
-                                <h3 class="Catalog-title">Jane's History</h3>
-                                <p class="Catalog-price">60€</p>
-                                <a class="Catalog-button" href="productos.html?id=11">Ver más</a>
-                            </div>
-                        </div>
-
-                        <!-- Original 6 -->
-                        <div class="Catalog-item">
-                            <a href="productos.html?id=12">
-                                <img src="./assets/img/originales/ellie-original.png" alt="Ellie TLOU Original">
-                            </a>
-                            <div class="Catalog-description">
-                                <h3 class="Catalog-title">Ellie TLOU</h3>
-                                <p class="Catalog-price">75€</p>
-                                <a class="Catalog-button" href="productos.html?id=12">Ver más
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-
-        </div>
-
-    </main>
-
-
-
-    <!-- Footer -->
-    <footer class="Footer">
-        <div class="Footer-content">
-            <ul class="Footer-list">
-                <li class="Footer-listItem"><a href="./aviso-legal.html" class="Footer-link">Aviso Legal</a></li>
-                <li class="Footer-listItem"><a href="./politica-privacidad.html" class="Footer-link">Política de Privacidad</a></li>
-                <li class="Footer-listItem"><a href="./cookies.html" class="Footer-link">Política de Cookies</a></li>
-            </ul>
-            
-        </div>
-    </footer>
-
-
+<body>
+  <header class="Header">
+    <img class="Header-logo" src="./img/logo.png" alt="Logo Cafetería Aroma">
+    <nav class="Header-nav">
+      <ul class="Header-list">
+        <li class="Header-item"><a href="index.html" class="Header-link">Inicio</a></li>
+        <li class="Header-item"><a href="tienda.html" class="Header-link">Tienda</a></li>
+        <li class="Header-item"><a href="carrito.html" class="Header-link">Carrito</a></li>
+        <li class="Header-item"><a href="terminos.html" class="Header-link">Términos</a></li>
+        <li class="Header-item"><a href="aviso.html" class="Header-link">Aviso Legal</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="Main">
+    <section class="Tienda">
+      <h1 class="Tienda-title">Coffee wood shop</h1>
+      <div class="Tienda-grid">
+        <!-- Producto 1: Café Especial -->
+        <article class="Tienda-item">
+          <img class="Tienda-itemImage" src="./img/bolsa cafe beig.png" alt="Café Especial">
+          <h2 class="Tienda-itemTitle">Café Especial</h2>
+          <p class="Tienda-itemPrice">$3.50</p>
+          <button class="Tienda-itemButton">Añadir al carrito</button>
+        </article>
+        <!-- Producto 2: Capuchino -->
+        <article class="Tienda-item">
+          <img class="Tienda-itemImage" src="./img/bolsa cafe rojo.png" alt="Capuchino">
+          <h2 class="Tienda-itemTitle">Capuchino</h2>
+          <p class="Tienda-itemPrice">$4.00</p>
+          <button class="Tienda-itemButton">Añadir al carrito</button>
+        </article>
+        <!-- Producto 3: Espresso -->
+        <article class="Tienda-item">
+          <img class="Tienda-itemImage" src="./img/bolsa cafe verde.png" alt="Espresso">
+          <h2 class="Tienda-itemTitle">Espresso</h2>
+          <p class="Tienda-itemPrice">$2.50</p>
+          <button class="Tienda-itemButton">Añadir al carrito</button>
+        </article>
+        <!-- Producto 4: Latte -->
+        <article class="Tienda-item">
+          <img class="Tienda-itemImage" src="https://via.placeholder.com/300x200?text=Latte" alt="Latte">
+          <h2 class="Tienda-itemTitle">Latte</h2>
+          <p class="Tienda-itemPrice">$4.50</p>
+          <button class="Tienda-itemButton">Añadir al carrito</button>
+        </article>
+        <!-- Producto 5: Frappé -->
+        <article class="Tienda-item">
+          <img class="Tienda-itemImage" src="https://via.placeholder.com/300x200?text=Frapp%C3%A9" alt="Frappé">
+          <h2 class="Tienda-itemTitle">Frappé</h2>
+          <p class="Tienda-itemPrice">$5.00</p>
+          <button class="Tienda-itemButton">Añadir al carrito</button>
+        </article>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="Footer">
+    <p class="Footer-text">&copy; 2025 Cafetería Aroma. Todos los derechos reservados.</p>
+  </footer>
+  
+  <script src="js/main.js"></script>
 </body>
-
 </html>

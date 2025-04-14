@@ -1,107 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cofee wood</title>
-
-    <!-- Iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/controllers.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/home.css">
-
-    <!-- Scripts -->
-    <script src="./js/menu.js" defer></script>
-    <script src="js/slider-home.js" defer></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafetería Aroma - Inicio</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-
-<body class="Body">
-
-    <!-- Encabezado -->
-    <header class="Header">
-        <nav class="Nav">
-
-            <!-- logotipo -->
-            <a href="./index.html">
-                <img class="Logo" src="./img/logo.png" alt="Logotipo Laus Draws">
-            </a>
-
-            <!-- Enlaces de navegación para desktop -->
-            <ul class="Nav-links">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./sobre-mi.html">Sobre nosotros</a></li>
-                <li><a href="./tienda.html">Tienda</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-
-            <!-- Contenedor para el carrito y menu móvil -->
-            <div class="Nav-shop">
-                <a href="./carrito.html" class="Nav-icon fa-solid fa-cart-shopping" aria-label="Carrito"></a>
-
-                <a class="Nav-icon fab fa-instagram" href="#" target="coffewood"></a>
-
-
-
-                <!-- Botón para el menú móvil -->
-                <div class="Nav-menuMobile">
-                    <button class="Nav-menu fa-solid fa-bars" aria-label="Abrir menú"></button>
-
-                    <!-- Menú móvil -->
-                    <ul class="Nav-menuLinks">
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./sobre-mi.html">Sobre nosotros</a></li>
-                        <li><a href="./tienda.html">Tienda</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </nav>
-
-    </header>
-
-    <main class="Main">
-
-        <!-- Galería -->
-        <div class="Gallery">
-            <div class="Gallery-slider">
-                <a href="productos.html?id=1">
-                    <img class="Gallery-image" src="./img/banner.jpg" alt="behind blue eyes">
-                </a>
-
-                <img class="Gallery-image" src="./img/gallery1.jpg" alt="imagen 1">
-                <img class="Gallery-image" src=".//img/gallery2.jpg" alt="iamgen 2">
-                <img class="Gallery-image" src="./img/gallery3.jpg" alt="imagen 3">
-                <img class="Gallery-image" src="./img/gallery4.jpg"
-                    alt="retrato-familiar-personalizado">
-                <img class="Gallery-image" src="./img/gallery5.jpg" alt="imagen 4">
-            </div>
-
-            <button class="Btn u-izq fa-solid fa-chevron-left" id="btnPrev"></button>
-            <button class="Btn u-der fa-solid fa-chevron-right" id="btnSig"></button>
-
-        </div>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="Footer">
-        <nav class="Footer-content">
-            <ul class="Footer-list">
-                <li class="Footer-listItem"><a href="./aviso-legal.html" class="Footer-link">Aviso Legal</a></li>
-                <li class="Footer-listItem"><a href="./politica-privacidad.html" class="Footer-link">Política de
-                        Privacidad</a></li>
-                <li class="Footer-listItem"><a href="./cookies.html" class="Footer-link">Política de Cookies</a></li>
-            </ul>
-           
-        </nav>
-    </footer>
-
+<body>
+  <!-- Encabezado común -->
+  <header class="Header">
+    <img class="Header-logo" src="./img/logo.png" alt="Logo Cafetería Aroma">
+    <nav class="Header-nav">
+      <ul class="Header-list">
+        <li class="Header-item"><a href="index.html" class="Header-link">Inicio</a></li>
+        <li class="Header-item"><a href="tienda.html" class="Header-link">Tienda</a></li>
+        <li class="Header-item"><a href="carrito.html" class="Header-link">Carrito</a></li>
+        <li class="Header-item"><a href="terminos.html" class="Header-link">Términos</a></li>
+        <li class="Header-item"><a href="aviso.html" class="Header-link">Aviso Legal</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="Main">
+    <section class="Main-hero">
+      <img class="Main-image" src="./img/expreso-category.jpg" alt="Imagen principal Cafetería">
+    </section>
+  </main>
+  
+  <footer class="Footer">
+    <p class="Footer-text">&copy; Coffee wood. Todos los derechos reservados.</p>
+  </footer>
+  
+  <script src="js/main.js"></script>
 </body>
-
 </html>
