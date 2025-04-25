@@ -1,58 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cofee wood</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coffee wood | Tienda</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/estilos.css" />
 </head>
-<body>
-  <header class="Header">
-    <img class="Header-logo" src="./img/logo.png" alt="Logo Cafetería Aroma">
-    <nav class="Header-nav">
-      <ul class="Header-list">
-        <li class="Header-item"><a href="index.html" class="Header-link">Inicio</a></li>
-        <li class="Header-item"><a href="tienda.html" class="Header-link">Tienda</a></li>
-        <li class="Header-item"><a href="carrito.html" class="Header-link">Carrito</a></li>
-        <li class="Header-item"><a href="terminos.html" class="Header-link">Términos</a></li>
-        <li class="Header-item"><a href="aviso.html" class="Header-link">Aviso Legal</a></li>
-      </ul>
-    </nav>
+
+<body class="Pagina">
+
+  <header class="Encabezado Encabezado--fijo">
+    <div class="Encabezado-contenedor">
+      <a class="Encabezado-logo" href="index.html">
+        <img src="img/logo.png" alt="Logo Cafetería Aroma" class="Encabezado-imagen" />
+      </a>
+      <button class="Encabezado-toggle" id="botonMenu" aria-label="Abrir menú">☰</button>
+      <nav class="Menu Menu--cerrado" id="menuPrincipal" aria-label="Menú principal">
+        <ul class="Menu-lista">
+          <li class="Menu-item"><a class="Menu-link" href="index.html">Inicio</a></li>
+          <li class="Menu-item"><a class="Menu-link" href="sobre-nosotros.html">Sobre&nbsp;nosotros</a></li>
+          <li class="Menu-item"><a class="Menu-link is-activo" href="tienda.html">Tienda</a></li>
+          <li class="Menu-item"><a class="Menu-link" href="terminos.html">Términos&nbsp;y&nbsp;condiciones</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  
-  <main class="Main">
-    <section class="Tienda">
-        
-      <div class="Tienda-grid">
-        <!-- Producto 1: Café Especial -->
-        <article class="Tienda-item">
-          <img class="Tienda-itemImage" src="./img/bolsa cafe beig.png" alt="Café Especial">
-          <h2 class="Tienda-itemTitle">Café Especial</h2>
-          <p class="Tienda-itemPrice">8,50€</p>
-          <button class="Tienda-itemButton">Añadir al carrito</button>
-        </article>
-        <!-- Producto 2: Capuchino -->
-        <article class="Tienda-item">
-          <img class="Tienda-itemImage" src="./img/bolsa cafe rojo.png" alt="Capuchino">
-          <h2 class="Tienda-itemTitle">Capuchino</h2>
-          <p class="Tienda-itemPrice">8,50€</p>
-          <button class="Tienda-itemButton">Añadir al carrito</button>
-        </article>
-        <!-- Producto 3: Espresso -->
-        <article class="Tienda-item">
-          <img class="Tienda-itemImage" src="./img/bolsa cafe verde.png" alt="Espresso">
-          <h2 class="Tienda-itemTitle">Espresso</h2>
-          <p class="Tienda-itemPrice">8,50€</p>
-          <button class="Tienda-itemButton">Añadir al carrito</button>
-        </article>  
+
+
+  <main class="Principal">
+    <h1 class="Principal-titulo">Nuestra selección</h1>
+    <div class="Productos">
+
+      <div class="Producto">
+        <img class="Producto-imagen"
+          src="/img/cafe en grano-min.png"
+          alt="Colombia Hacienda El Paraíso">
+        <div class="Producto-contenido">
+          <h3 class="Producto-titulo">Café en grano</h3>
+          <p class="Producto-descripcion">Sabor original.</p>
+          <div class="Producto-precio">€9.50</div>
+          <button class="Boton Boton--secundario Producto-boton" data-id="1">Añadir</button>
+        </div>
       </div>
-    </section>
+
+      <div class="Producto">
+        <img class="Producto-imagen"
+          src="./img/cafe capsulas.png"
+          alt="Capsulas">
+        <div class="Producto-contenido">
+          <h3 class="Producto-titulo">Café en capsulas.</h3>
+          <p class="Producto-descripcion">café para dolçe gusto.</p>
+          <div class="Producto-precio">€8.00</div>
+          <button class="Boton Boton--secundario Producto-boton" data-id="2">Añadir</button>
+        </div>
+      </div>
+
+      <div class="Producto">
+        <img class="Producto-imagen"
+          src="./img/cafe molido.png"
+          alt="Molido">
+        <div class="Producto-contenido">
+          <h3 class="Producto-titulo">Café molido.</h3>
+          <p class="Producto-descripcion">Café listo para cafetera.</p>
+          <div class="Producto-precio">€8.50</div>
+          <button class="Boton Boton--secundario Producto-boton" data-id="3">Añadir</button>
+        </div>
+      </div>
+
+      <div class="Producto">
+        <img class="Producto-imagen"
+          src="/img/set de tazas.png"
+          alt="Set de tazas coffee wood">
+        <div class="Producto-contenido">
+          <h3 class="Producto-titulo">Set de tazas coffee wood</h3>
+          <p class="Producto-descripcion">Perfecto para tus mañanas de café.</p>
+          <div class="Producto-precio">€19.90</div>
+          <button class="Boton Boton--secundario Producto-boton" data-id="4">Añadir</button>
+        </div>
+      </div>
+
+    </div>
   </main>
-  
-  <footer class="Footer">
-    <p class="Footer-text">&copy; 2025 Coffee wood. Todos los derechos reservados.</p>
+
+  <aside class="Carrito" id="carritoSidebar" aria-label="Carrito de compra">
+    <h2 class="Carrito-titulo">🛒 Tu carrito</h2>
+    <div id="carritoItems" class="Carrito-items"></div>
+    <p id="carritoVacio" class="Carrito-vacio">Tu carrito está vacío</p>
+    <div id="carritoTotal" class="Carrito-total"></div>
+    <button id="botonPagar" class="Boton Boton--primario Boton--bloqueado" disabled>Pagar</button>
+    <button id="botonCerrarCarrito" class="Carrito-cerrar" aria-label="Cerrar carrito">✕</button>
+  </aside>
+
+
+  <footer class="Pie">
+    <div class="Pie-contenedor">
+      <p class="Pie-texto">© 2025 Coffee wood · Todos los derechos reservados</p>
+    </div>
   </footer>
-  
-  <script src="js/main.js"></script>
+
+  <script>
+    const PRODUCTOS = [{ "id": 1, "nombre": "Colombia Hacienda El Paraíso", "desc": "Notas de panela, flores y frutos rojos.", "precio": 9.5, "img": "https://images.unsplash.com/photo-1510070009289-b5bc34383727?auto=format&fit=crop&w=600&q=60" }, { "id": 2, "nombre": "Etiopía Yirgacheffe", "desc": "Floral, cítrico y complejo.", "precio": 11.0, "img": "https://images.unsplash.com/photo-1509042239861-9fe3c0e06c60?auto=format&fit=crop&w=600&q=60" }, { "id": 3, "nombre": "Brasil Sitio da Torre", "desc": "Chocolate con leche y avellana.", "precio": 8.2, "img": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=60" }, { "id": 4, "nombre": "Blend Espresso Vintage", "desc": "Equilibrado, crema densa y toque caramelizado.", "precio": 9.9, "img": "https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=60" }];
+  </script>
+  <script src="javascript/menu.js"></script>
+  <script src="javascript/tienda.js"></script>
 </body>
+
 </html>

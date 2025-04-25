@@ -1,39 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cafetería Aroma - Términos y Condiciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coffee wood | Términos y Condiciones</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/estilos.css" />
 </head>
-<body>
-  <header class="Header">
-    <img class="Header-logo" src="./img/logo.png" alt="Logo Cafetería Aroma">
-    <nav class="Header-nav">
-      <ul class="Header-list">
-        <li class="Header-item"><a href="index.html" class="Header-link">Inicio</a></li>
-        <li class="Header-item"><a href="tienda.html" class="Header-link">Tienda</a></li>
-        <li class="Header-item"><a href="carrito.html" class="Header-link">Carrito</a></li>
-        <li class="Header-item"><a href="terminos.html" class="Header-link">Términos</a></li>
-        <li class="Header-item"><a href="aviso.html" class="Header-link">Aviso Legal</a></li>
-      </ul>
-    </nav>
+
+<body class="Pagina">
+
+  <header class="Encabezado Encabezado--fijo">
+    <div class="Encabezado-contenedor">
+      <a class="Encabezado-logo" href="index.html">
+        <img src="img/logo.png" alt="Logo Cafetería Aroma" class="Encabezado-imagen" />
+      </a>
+      <button class="Encabezado-toggle" id="botonMenu" aria-label="Abrir menú">☰</button>
+      <nav class="Menu Menu--cerrado" id="menuPrincipal" aria-label="Menú principal">
+        <ul class="Menu-lista">
+          <li class="Menu-item"><a class="Menu-link" href="index.html">Inicio</a></li>
+          <li class="Menu-item"><a class="Menu-link" href="sobre-nosotros.html">Sobre&nbsp;nosotros</a></li>
+          <li class="Menu-item"><a class="Menu-link" href="tienda.html">Tienda</a></li>
+          <li class="Menu-item"><a class="Menu-link is-activo" href="terminos.html">Términos&nbsp;y&nbsp;condiciones</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  
-  <main class="Main">
-    <section class="Content">
-      <h1 class="Content-title">Términos y Condiciones</h1>
-      <p class="Content-text">
-        Estos términos y condiciones regulan el uso de la web y la compra de productos en Cafetería Aroma. 
-        Al utilizar nuestro sitio, aceptas estas condiciones. [Aquí puedes ampliar la información según tus necesidades].
-      </p>
-    </section>
+
+
+  <main class="Principal">
+    <h1 class="Principal-titulo">Términos y Condiciones Coffee wood</h1>
+    <p class="Principal-texto">Términos y Condiciones de Coffee Wood
+      Última actualización: Abril 2025</p>
+      
+      <p>Bienvenido a Coffee Wood. Al acceder a nuestro sitio web o realizar una compra, aceptas los siguientes términos y condiciones. Te recomendamos leerlos atentamente.</p>
+      
+      <p><b>1.</b> Uso del sitio
+      El contenido de este sitio web es exclusivamente informativo. Coffee Wood se reserva el derecho de modificar productos, precios, y condiciones en cualquier momento sin previo aviso.</p>
+      
+      <p><b>2.</b> Pedidos y pagos
+      Todos los pedidos están sujetos a disponibilidad de productos. Los precios están indicados en euros (€) e incluyen impuestos aplicables. El pago debe realizarse en su totalidad antes del envío.</p>
+      
+      <p><b>3.</b> Envíos
+      Realizamos envíos a toda España. Los plazos de entrega pueden variar según la ubicación y la disponibilidad del producto.</p>
+      
+      <p><b>4.</b> Devoluciones
+      Aceptamos devoluciones dentro de los 14 días naturales tras la recepción del pedido, siempre que los productos estén en perfectas condiciones y sin uso. Los gastos de devolución correrán a cargo del cliente salvo error o defecto imputable a Coffee Wood.</p>
+      
+      <p><b>5.</b> Protección de datos
+      Los datos personales proporcionados serán tratados conforme a nuestra Política de Privacidad, utilizada únicamente para gestionar pedidos y mejorar tu experiencia.</p>
+      
+      <p><b>6.</b> Propiedad intelectual
+      Todos los textos, imágenes, logotipos y contenidos de este sitio son propiedad de Coffee Wood y no pueden ser reproducidos sin autorización previa.</p>
+      
+      <p><b>7.</b> Contacto
+      Para cualquier consulta o reclamación, puedes escribirnos a hola@coffeewood.com.</p>
+      
+      
+      
   </main>
-  
-  <footer class="Footer">
-    <p class="Footer-text">&copy; 2025 Cafetería Aroma. Todos los derechos reservados.</p>
+
+
+  <footer class="Pie">
+    <div class="Pie-contenedor">
+      <p class="Pie-texto">© 2025 Coffee wood · Todos los derechos reservados</p>
+    </div>
   </footer>
-  
-  <script src="js/main.js"></script>
+
+  <script src="javascript/menu.js"></script>
 </body>
+
 </html>
