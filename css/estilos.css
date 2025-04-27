@@ -18,6 +18,7 @@
 body,
 button {
   font-family: 'Open Sans', sans-serif;
+
 }
 
 h1,
@@ -44,11 +45,11 @@ h3,
 .Encabezado--fijo {
   position: sticky;
   top: 0;
-  z-index: 200;
+  z-index: 100;
 }
 
 .Encabezado-contenedor {
-  max-width: var(--ancho-max);
+  max-width: none;
   margin: auto;
   padding: 1rem 1.5rem;
   display: flex;
@@ -164,7 +165,7 @@ h3,
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
-  transition: transform .2s, background .2s;
+  transition: transform .2s;
 }
 
 .Boton:hover {
@@ -334,4 +335,85 @@ h3,
 .Pie-texto {
   color: var(--color-marron-claro);
   font-size: .85rem;
+}
+
+/* ============ Formulario de contacto ============ */
+.SeccionContacto {
+  background: var(--color-blanco);
+  padding: 2.5rem 1.5rem;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.SeccionContacto-titulo {
+  font-size: 2rem;
+  color: var(--color-marron);
+  margin-bottom: 1rem;
+}
+
+.SeccionContacto-texto {
+  color: var(--color-marron-claro);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* ---------- Grid del formulario ---------- */
+.FormularioContacto {
+  display: grid;
+  gap: 1.2rem;
+}
+
+@media (min-width: 600px) {
+  .FormularioContacto {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* El textarea ocupa las dos columnas en pantallas medianas+ */
+  .FormularioContacto .FormularioGrupo:nth-child(5) {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ---------- Campos ---------- */
+.FormularioGrupo {
+  display: flex;
+  flex-direction: column;
+}
+
+.FormularioLabel {
+  font-weight: 600;
+  margin-bottom: .4rem;
+  color: var(--color-marron);
+}
+
+.FormularioInput,
+.FormularioTextarea {
+  padding: .7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: var(--radio);
+  font-size: .95rem;
+  background: var(--color-blanco);
+  color: var(--color-marron);
+  transition: border .2s, box-shadow .2s;
+}
+
+.FormularioInput:focus,
+.FormularioTextarea:focus {
+  border-color: var(--color-dorado);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, .25);
+  outline: none;
+}
+
+.FormularioTextarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+/* ---------- Botón ---------- */
+.FormularioContacto .Boton {
+  width: 100%;
+  margin-top: .8rem;
 }

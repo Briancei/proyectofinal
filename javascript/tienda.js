@@ -14,7 +14,7 @@
   // Renderizado inicial de carrito
   refrescarCarrito();
 
-  // Delegación de eventos para botones "Añadir"
+  // eventos para botones "Añadir"
   gridProductos.addEventListener('click', (e) => {
     if (e.target.matches('.Producto-boton')) {
       const id = e.target.dataset.id;

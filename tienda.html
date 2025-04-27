@@ -2,13 +2,11 @@
 <html lang="es">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Coffee wood | Tienda</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/estilos.css" />
+
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body class="Pagina">
@@ -16,7 +14,7 @@
   <header class="Encabezado Encabezado--fijo">
     <div class="Encabezado-contenedor">
       <a class="Encabezado-logo" href="index.html">
-        <img src="img/logo.png" alt="Logo Cafetería Aroma" class="Encabezado-imagen" />
+        <img src="img/logo.png" alt="Logo Cafetería Aroma" class="Encabezado-imagen" loading="lazy">
       </a>
       <button class="Encabezado-toggle" id="botonMenu" aria-label="Abrir menú">☰</button>
       <nav class="Menu Menu--cerrado" id="menuPrincipal" aria-label="Menú principal">
@@ -25,6 +23,7 @@
           <li class="Menu-item"><a class="Menu-link" href="sobre-nosotros.html">Sobre&nbsp;nosotros</a></li>
           <li class="Menu-item"><a class="Menu-link is-activo" href="tienda.html">Tienda</a></li>
           <li class="Menu-item"><a class="Menu-link" href="terminos.html">Términos&nbsp;y&nbsp;condiciones</a></li>
+          <li class="Menu-item"><a class="Menu-link is-activo" href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </div>
@@ -36,9 +35,7 @@
     <div class="Productos">
 
       <div class="Producto">
-        <img class="Producto-imagen"
-          src="/img/cafe en grano-min.png"
-          alt="Colombia Hacienda El Paraíso">
+        <img class="Producto-imagen" src="/img/cafe en grano-min.png" alt="Colombia Hacienda El Paraíso" loading="lazy">
         <div class="Producto-contenido">
           <h3 class="Producto-titulo">Café en grano</h3>
           <p class="Producto-descripcion">Sabor original.</p>
@@ -48,9 +45,7 @@
       </div>
 
       <div class="Producto">
-        <img class="Producto-imagen"
-          src="./img/cafe capsulas.png"
-          alt="Capsulas">
+        <img class="Producto-imagen" src="./img/cafe capsulas.png" alt="Capsulas" loading="lazy">
         <div class="Producto-contenido">
           <h3 class="Producto-titulo">Café en capsulas.</h3>
           <p class="Producto-descripcion">café para dolçe gusto.</p>
@@ -60,9 +55,7 @@
       </div>
 
       <div class="Producto">
-        <img class="Producto-imagen"
-          src="./img/cafe molido.png"
-          alt="Molido">
+        <img class="Producto-imagen" src="./img/cafe molido.png" alt="Molido" loading="lazy">
         <div class="Producto-contenido">
           <h3 class="Producto-titulo">Café molido.</h3>
           <p class="Producto-descripcion">Café listo para cafetera.</p>
@@ -72,9 +65,7 @@
       </div>
 
       <div class="Producto">
-        <img class="Producto-imagen"
-          src="/img/set de tazas.png"
-          alt="Set de tazas coffee wood">
+        <img class="Producto-imagen" src="/img/set de tazas.png" alt="Set de tazas coffee wood" loading="lazy">
         <div class="Producto-contenido">
           <h3 class="Producto-titulo">Set de tazas coffee wood</h3>
           <p class="Producto-descripcion">Perfecto para tus mañanas de café.</p>
@@ -103,7 +94,10 @@
   </footer>
 
   <script>
-    const PRODUCTOS = [{ "id": 1, "nombre": "Colombia Hacienda El Paraíso", "desc": "Notas de panela, flores y frutos rojos.", "precio": 9.5, "img": "https://images.unsplash.com/photo-1510070009289-b5bc34383727?auto=format&fit=crop&w=600&q=60" }, { "id": 2, "nombre": "Etiopía Yirgacheffe", "desc": "Floral, cítrico y complejo.", "precio": 11.0, "img": "https://images.unsplash.com/photo-1509042239861-9fe3c0e06c60?auto=format&fit=crop&w=600&q=60" }, { "id": 3, "nombre": "Brasil Sitio da Torre", "desc": "Chocolate con leche y avellana.", "precio": 8.2, "img": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=60" }, { "id": 4, "nombre": "Blend Espresso Vintage", "desc": "Equilibrado, crema densa y toque caramelizado.", "precio": 9.9, "img": "https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=60" }];
+    const PRODUCTOS = [{ "id": 1, "nombre": "Café en grano", "desc": "Sabor original.", "precio": 9.5, },
+    { "id": 2, "nombre": "Café en capsulas", "desc": "Café para dolçe gusto.", "precio": 8, },
+    { "id": 3, "nombre": "Café molido", "desc": "Listo para tu cafetera.", "precio": 8.5, },
+    { "id": 4, "nombre": "Set de tazas café", "desc": ".", "precio": 19.90, }];
   </script>
   <script src="javascript/menu.js"></script>
   <script src="javascript/tienda.js"></script>

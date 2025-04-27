@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee wood | Contacto</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="Pagina">
+
+    <header class="Encabezado Encabezado--fijo">
+        <div class="Encabezado-contenedor">
+            <a class="Encabezado-logo" href="index.html">
+                <img src="img/logo.png" alt="Logo Coffee wood" class="Encabezado-imagen" loading="lazy">
+            </a>
+            <button class="Encabezado-toggle" id="botonMenu" aria-label="Abrir menú">☰</button>
+            <nav class="Menu Menu--cerrado" id="menuPrincipal" aria-label="Menú principal">
+                <ul class="Menu-lista">
+                    <li class="Menu-item"><a class="Menu-link" href="index.html">Inicio</a></li>
+                    <li class="Menu-item"><a class="Menu-link" href="sobre-nosotros.html">Sobre&nbsp;nosotros</a></li>
+                    <li class="Menu-item"><a class="Menu-link" href="tienda.html">Tienda</a></li>
+                    <li class="Menu-item"><a class="Menu-link" href="terminos.html">Términos&nbsp;y&nbsp;condiciones</a>
+                    </li>
+                    <li class="Menu-item"><a class="Menu-link is-activo" href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="Principal">
+        <section class="SeccionContacto">
+            <h1 class="SeccionContacto-titulo">Ponte en contacto</h1>
+            <p class="SeccionContacto-texto">¿Tienes dudas sobre nuestros cafés, tu pedido o quieres colaborar con
+                nosotros? Rellena el formulario y te responderemos lo antes posible.</p>
+
+            <!-- FORMULARIO DE CONTACTO -->
+            <form class="FormularioContacto" action="#" method="post">
+                <div class="FormularioGrupo">
+                    <label class="FormularioLabel" for="nombre">Nombre</label>
+                    <input class="FormularioInput" id="nombre" name="nombre" type="text" placeholder="Tu nombre"
+                        required />
+                </div>
+
+                <div class="FormularioGrupo">
+                    <label class="FormularioLabel" for="email">Correo electrónico</label>
+                    <input class="FormularioInput" id="email" name="email" type="email" placeholder="correo@ejemplo.com"
+                        required />
+                </div>
+
+                <div class="FormularioGrupo">
+                    <label class="FormularioLabel" for="telefono">Teléfono (opcional)</label>
+                    <input class="FormularioInput" id="telefono" name="telefono" type="tel"
+                        placeholder="+34 600 123 456" />
+                </div>
+
+                <div class="FormularioGrupo">
+                    <label class="FormularioLabel" for="asunto">Asunto</label>
+                    <input class="FormularioInput" id="asunto" name="asunto" type="text"
+                        placeholder="Motivo de tu mensaje" required />
+                </div>
+
+                <div class="FormularioGrupo">
+                    <label class="FormularioLabel" for="mensaje">Mensaje</label>
+                    <textarea class="FormularioTextarea" id="mensaje" name="mensaje" rows="6"
+                        placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+                </div>
+
+                <button class="Boton Boton--primario" type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- ========= PIE DE PÁGINA ========= -->
+    <footer class="Pie">
+        <div class="Pie-contenedor">
+            <p class="Pie-texto">© 2025 Coffee wood · Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- ===== JS del menú hamburguesa (reutilizado) ===== -->
+    <script src="javascript/menu.js"></script>
+</body>
+
+</html>
