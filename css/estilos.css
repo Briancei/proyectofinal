@@ -1,7 +1,7 @@
 :root {
-  --color-fondo: #816345;
+  --color-fondo: #68492c;
   --color-marron: #050505;
-  --color-marron-claro: #8e6e63;
+  --color-marron-claro: #faf6f5;
   --color-dorado: #D4AF37;
   --color-blanco: #070707;
   --radio: 10px;
@@ -75,7 +75,7 @@ h3,
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--color-dorado);
+
   display: none;
 }
 
@@ -88,11 +88,10 @@ h3,
 
 .Menu-link {
   text-decoration: none;
-  color: var(--color-marron-claro);
+  color: white;
   font-weight: 600;
 }
 
-.Menu-link.is-activo,
 .Menu-link:hover {
   color: var(--color-dorado);
 }
@@ -195,13 +194,12 @@ h3,
 }
 
 /* ================= Principal ================= */
-.Principal {
-  padding: 4rem 1.5rem 2rem;
+.Principal , .Articulo{
   max-width: var(--ancho-max);
   margin: auto;
 }
 
-.Principal-titulo {
+.Principal-titulo{
   font-size: 2.2rem;
   margin-bottom: 1.5rem;
   color: var(--color-dorado);
@@ -265,12 +263,14 @@ h3,
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: var(--color-marron-claro);
 }
 
 .Producto-boton {
   font-size: 0.8rem;
   padding: 0.4rem 0.8rem;
   align-self: flex-start;
+  color: var(--color-marron-claro);
 }
 
 
@@ -282,7 +282,7 @@ h3,
   width: 320px;
   height: 100vh;
   background: var(--color-blanco);
-  box-shadow: -4px 0 12px rgba(0, 0, 0, .15);
+  box-shadow: -4px 0 12px rgba(250, 244, 244, 0.15);
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -372,12 +372,12 @@ h3,
 
 .SeccionContacto-titulo {
   font-size: 2rem;
-  color: var(--color-marron);
+  color: white;
   margin-bottom: 1rem;
 }
 
 .SeccionContacto-texto {
-  color: var(--color-marron-claro);
+  color: white;
   font-size: 1rem;
   margin-bottom: 2rem;
 }
@@ -393,7 +393,6 @@ h3,
     grid-template-columns: 1fr 1fr;
   }
 
-  /* El textarea ocupa las dos columnas en pantallas medianas+ */
   .FormularioContacto .FormularioGrupo:nth-child(5) {
     grid-column: 1 / -1;
   }
@@ -414,7 +413,7 @@ h3,
 .FormularioInput,
 .FormularioTextarea {
   padding: .7rem 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #fcfbfb;
   border-radius: var(--radio);
   font-size: .95rem;
   background: var(--color-blanco);
@@ -431,11 +430,12 @@ h3,
 
 .FormularioTextarea {
   resize: vertical;
-  min-height: 160px;
+  min-height: 10px;
 }
 
 /* ---------- Botón ---------- */
 .FormularioContacto .Boton {
   width: 100%;
   margin-top: .8rem;
+  
 }
