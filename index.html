@@ -3,46 +3,46 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Café de especialidad tostado desde 1987. Descubre nuestra tienda y conoce más sobre nosotros.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Café de especialidad tostado desde 1987. Descubre nuestra tienda y conoce más sobre nosotros.">
+  <meta name="author" content="Coffee Wood">
   <title>Coffee wood | Inicio</title>
-
   <link rel="stylesheet" href="css/estilos.css">
+
 </head>
 
 <body class="Pagina">
-
   <header class="Encabezado Encabezado--fijo">
     <div class="Encabezado-contenedor">
       <a class="Encabezado-logo" href="index.html">
         <img src="img/logo.png" alt="Logo Coffee wood" class="Encabezado-imagen" loading="lazy">
       </a>
-      <button class="Encabezado-toggle" id="botonMenu" aria-label="Abrir menú">☰</button>
-      <nav class="Menu Menu--cerrado" id="menuPrincipal" aria-label="Menú principal">
+      <input type="checkbox" id="menuToggle" class="Menu-toggle">
+      <label for="menuToggle" class="Encabezado-toggle" aria-label="Abrir menú">☰</label>
+      <nav class="Menu" id="menuPrincipal" aria-label="Menú principal">
         <ul class="Menu-lista">
           <li class="Menu-item"><a class="Menu-link is-activo" href="index.html">Inicio</a></li>
-          <li class="Menu-item"><a class="Menu-link" href="sobre-nosotros.html">Sobre&nbsp;nosotros</a></li>
+          <li class="Menu-item"><a class="Menu-link" href="sobre-nosotros.html">Sobre nosotros</a></li>
           <li class="Menu-item"><a class="Menu-link" href="tienda.html">Tienda</a></li>
-          <li class="Menu-item"><a class="Menu-link" href="terminos.html">Términos&nbsp;y&nbsp;condiciones</a></li>
-          <li class="Menu-item"><a class="Menu-link is-activo" href="contacto.html">Contacto</a></li>
+          <li class="Menu-item"><a class="Menu-link" href="terminos.html">Términos y condiciones</a></li>
+          <li class="Menu-item"><a class="Menu-link" href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-
   <main class="Principal">
-    <img class="Hero-imagen" src="./img/cafeteriamain.png" alt="Cafeteria" loading="lazy">
+    <img class="Hero-imagen" src="./img/cafeteriamain.png" alt="Cafetería" loading="lazy">
     <section class="Hero">
       <div class="Hero-caja">
         <h1 class="Hero-titulo">Café de especialidad</h1>
-        <p class="Hero-texto"><b>Desde 1987 tostamos pequeños lotes en un tostador Probat de 1953 para resaltar el carácter
-          único de cada origen.</b></p>
+        <p class="Hero-texto"><b>Desde 1987 tostamos pequeños lotes en un tostador Probat de 1953 para resaltar el
+            carácter único de cada origen.</b></p>
         <a href="tienda.html" class="Boton Boton--primario">Descubre nuestra tienda</a>
       </div>
     </section>
   </main>
-
 
   <footer class="Pie">
     <div class="Pie-contenedor">

@@ -1,83 +1,53 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const productos = [
+    { id: 1, nombre: "Café en grano", precio: 9.5 },
+    { id: 2, nombre: "Café molido", precio: 8.5 }
+  ];
 
-const PRODUCTOS = [
-  { id: 1, nombre: "Café en grano", precio: 9.5 },
-  { id: 2, nombre: "Café en capsulas", precio: 8 },
-  { id: 3, nombre: "Café molido", precio: 8.5 },
-  { id: 4, nombre: "Set de tazas café", precio: 19.9 }
-];
+  const carrito = [];
+  const items = document.getElementById("items");
+  const vacio = document.getElementById("vacio");
+  const total = document.getElementById("total");
+  const pagar = document.getElementById("pagar");
+  const cerrar = document.getElementById("cerrar");
+  const aside = document.getElementById("carrito");
 
-window.addEventListener('DOMContentLoaded', () => {
-  const gridProductos = document.querySelector('.Productos');
-  const carritoSidebar = document.getElementById('carritoSidebar');
-  const carritoItems = document.getElementById('carritoItems');
-  const carritoVacio = document.getElementById('carritoVacio');
-  const carritoTotal = document.getElementById('carritoTotal');
-  const botonPagar = document.getElementById('botonPagar');
-  const botonCerrarCarrito = document.getElementById('botonCerrarCarrito');
-
-  let carrito = [];
-
-  refrescarCarrito();
-
-  
-  gridProductos.addEventListener('click', (e) => {
-    if (e.target.matches('.Producto-boton')) {
-      const id = parseInt(e.target.dataset.id);
-      const producto = PRODUCTOS.find(p => p.id === id);
-      if (producto) {
-        carrito.push(producto);
-        refrescarCarrito();
-        abrirCarrito();
-      }
-    }
+  document.querySelectorAll(".btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const id = parseInt(btn.dataset.id);
+      const prod = productos.find(p => p.id === id);
+      if (prod) carrito.push(prod);
+      renderCarrito();
+      aside.classList.add("abierto");
+    });
   });
 
-  // Cerrar carrito
-  botonCerrarCarrito.addEventListener('click', cerrarCarrito);
+  cerrar.addEventListener("click", () => aside.classList.remove("abierto"));
 
-  // Simular pago
-  botonPagar.addEventListener('click', () => {
-    alert('Simulación de pago completada. ¡Gracias por tu compra!');
-    carrito = [];
-    refrescarCarrito();
-    cerrarCarrito();
+  pagar.addEventListener("click", () => {
+    alert("Compra realizada");
+    carrito.length = 0;
+    renderCarrito();
+    aside.classList.remove("abierto");
   });
 
-  function abrirCarrito() {
-    carritoSidebar.classList.add('Carrito--abierto');
-  }
-  
-  function cerrarCarrito() {
-    carritoSidebar.classList.remove('Carrito--abierto');
-  }
-
-  
-  function refrescarCarrito() {
-    carritoItems.innerHTML = '';
-
+  function renderCarrito() {
+    items.innerHTML = "";
     if (carrito.length === 0) {
-      carritoVacio.style.display = 'block';
-      carritoTotal.textContent = '';
-      botonPagar.disabled = true;
-      botonPagar.classList.add('Boton--bloqueado');
-    } else {
-      carritoVacio.style.display = 'none';
-      let total = 0;
-
-      carrito.forEach(item => {
-        total += item.precio;
-        const div = document.createElement('div');
-        div.className = 'Carrito-item';
-        div.innerHTML = `
-          <span class="Carrito-item-nombre">${item.nombre}</span>
-          <span class="Carrito-item-precio">€${item.precio.toFixed(2)}</span>
-        `;
-        carritoItems.appendChild(div);
-      });
-
-      carritoTotal.textContent = 'Total: €' + total.toFixed(2);
-      botonPagar.disabled = false;
-      botonPagar.classList.remove('Boton--bloqueado');
+      vacio.style.display = "block";
+      total.textContent = "";
+      pagar.disabled = true;
+      return;
     }
+    vacio.style.display = "none";
+    let suma = 0;
+    carrito.forEach(p => {
+      suma += p.precio;
+      const div = document.createElement("div");
+      div.textContent = `${p.nombre} - €${p.precio.toFixed(2)}`;
+      items.appendChild(div);
+    });
+    total.textContent = "Total: €" + suma.toFixed(2);
+    pagar.disabled = false;
   }
 });
